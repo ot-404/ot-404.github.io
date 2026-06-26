@@ -88,7 +88,7 @@
             <a href="/projects/#p-lumo">Lumo — AI To-Do App</a>
           
         </h3>
-        <p>Models users, tasks, lists, and nested subtasks via SQLAlchemy over a SQL database, with the relationships and queries that power every view.</p>
+        <p>The data layer is modeled with SQLAlchemy: a User table, TaskList (name, colour, icon), and Task (priority, due date, notes, and a self-referential parent_id for nested subtasks), plus a log of AI calls. Queries back every screen — date filters for today and upcoming, inbox (tasks with no list), per-list views, and aggregate counts for the sidebar badges. It runs on SQLite locally and PostgreSQL (Neon) in production.</p>
       </article>
     
   </div>

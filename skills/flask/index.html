@@ -77,7 +77,7 @@
 <section class="section container narrow">
   <p class="eyebrow"><a class="back-link" href="/#skills">&larr; What I work with</a></p>
   <h1 class="page-title">Flask</h1>
-  <p class="lead">My go-to Python web framework for building APIs and server-rendered sites.</p>
+  <p class="lead">My go-to Python web framework — both JSON APIs and server-rendered sites.</p>
 
   <h2 class="section-title">Where I've used it</h2>
   <div class="usage-list">
@@ -88,7 +88,7 @@
             <a href="/projects/#p-lumo">Lumo — AI To-Do App</a>
           
         </h3>
-        <p>Serves the REST API for tasks, lists, and auth, issues JWTs, and serves the compiled React/Vite frontend from a single container.</p>
+        <p>Flask is the backbone of the backend. It exposes a JSON REST API under /api (auth, tasks, lists, and four AI endpoints), issues and verifies tokens with Flask-JWT-Extended, and applies CORS. The same app factory also serves the compiled React/Vite SPA in production, so one container runs both the API and the frontend. Endpoints cover task view filters, sidebar count badges, subtask creation via parent_id, reordering, and AI quick-add, breakdown, plan, and chat.</p>
       </article>
     
       <article class="usage-item">
@@ -97,7 +97,7 @@
             <a href="https://github.com/ot-404/portfolio" target="_blank" rel="noopener">This portfolio</a>
           
         </h3>
-        <p>Server-renders the pages with Jinja; a build script then freezes it to static HTML for GitHub Pages.</p>
+        <p>Server-renders every page from Jinja templates that extend a shared base layout — home, projects, these per-skill pages, and a contact form that emails submissions. A freeze step then turns the rendered output into the static site you&#39;re reading.</p>
       </article>
     
   </div>

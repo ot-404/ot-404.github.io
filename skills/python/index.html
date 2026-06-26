@@ -77,7 +77,7 @@
 <section class="section container narrow">
   <p class="eyebrow"><a class="back-link" href="/#skills">&larr; What I work with</a></p>
   <h1 class="page-title">Python</h1>
-  <p class="lead">My main backend language — web APIs, data models, auth, and wiring up AI features.</p>
+  <p class="lead">My main backend language — REST APIs, data models, authentication, and the glue around AI features.</p>
 
   <h2 class="section-title">Where I've used it</h2>
   <div class="usage-list">
@@ -88,7 +88,7 @@
             <a href="/projects/#p-lumo">Lumo — AI To-Do App</a>
           
         </h3>
-        <p>Powers the entire backend: a Flask REST API, SQLAlchemy data models, JWT auth, and the server-side logic that calls Claude for AI quick-add, task breakdown, and “plan my day”.</p>
+        <p>Python (3.11) powers the whole backend. It&#39;s a Flask REST API built with an app-factory pattern and blueprinted routes for auth, tasks, lists, and AI. Python handles JWT-based auth (identity = user id, no roles), Werkzeug password hashing, and all the task logic: view filters (today/upcoming/all/inbox/completed), completion toggling that cascades to subtasks, and drag-to-reorder persistence. An ai_service module tries Claude first, falls back to an OpenAI-compatible endpoint, then to a local heuristic parser, so the app works even with no API keys. It runs under gunicorn in a single Docker container.</p>
       </article>
     
       <article class="usage-item">
@@ -97,7 +97,7 @@
             <a href="https://github.com/ot-404/portfolio" target="_blank" rel="noopener">This portfolio</a>
           
         </h3>
-        <p>Built as a small Flask app with server-rendered Jinja templates and a static-site build step.</p>
+        <p>A small Flask app in Python: the routes, the content model behind these project and skill pages, an SMTP contact-form mailer, and a build script (build_static.py) that renders the whole site to static HTML for GitHub Pages.</p>
       </article>
     
   </div>

@@ -88,7 +88,7 @@
             <a href="/projects/#p-beatlab">BeatLab Pro</a>
           
         </h3>
-        <p>The whole app is vanilla JavaScript: real-time audio synthesis via the Web Audio API, a 16-step sequencer, a piano roll, and a synth/mixer UI — no framework.</p>
+        <p>The entire instrument is hand-written vanilla JavaScript on top of the Web Audio API — no framework or audio library. It builds a single AudioContext graph of oscillators, gain nodes, biquad filters, a convolver for reverb, and a delay line. ADSR envelopes are shaped by scheduling setValueAtTime and exponential/linear ramps on gain nodes; a step sequencer triggers voices in time, the piano roll plays polyphonically, and your patterns are saved to localStorage.</p>
       </article>
     
       <article class="usage-item">
@@ -97,7 +97,7 @@
             <a href="/projects/#p-lumo">Lumo — AI To-Do App</a>
           
         </h3>
-        <p>Drives the React front-end and its AI-powered interactions.</p>
+        <p>Drives the React 19 front-end — async fetch calls to the REST API, UI state, and the AI assistant interactions.</p>
       </article>
     
   </div>
